@@ -7,13 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-//service_nllcb0n
-//template_s2vhroa
-//RMbi6DUFh4-iwu4qX 
-
-
-
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -83,7 +76,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-15'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -130,7 +123,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[500px] h-[300px]'
       >
         <EarthCanvas/>
       </motion.div>
